@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold" onClick={()=>{navigate("/")}}>User Dashboard</h1>
+        <h1 className="text-2xl font-bold" onClick={()=>{navigate("/")}}>Koach</h1>
         <nav>
           <ul className="flex space-x-3">
             <li>

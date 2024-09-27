@@ -2,6 +2,7 @@ import React from "react";
 import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
 import ImageViewer from 'react-image-viewer-zoom'
 import 'react-image-viewer-zoom/dist/style.css' 
+import { useEffect,useState } from "react";
 
 type UserProfileProps = {
   user: {
@@ -12,7 +13,17 @@ type UserProfileProps = {
   };
 };
 
+
 const UserProfile: React.FC<UserProfileProps> = ({ user }) => {
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  useEffect(() => {
+    const img = new Image();
+    img.src = "https://plus.unsplash.com/premium_photo-1675129522693-bd62ffe5e015?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    img.onload = () => setIsLoaded(true);
+  }, []);
+  
   return (
     <div className="h-full max-h-fit items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-md rounded-lg xl:mt-10 p-6 flex flex-col">
       <h2 className="text-3xl font-bold mb-6 text-center md:text-left">User Profile</h2>
