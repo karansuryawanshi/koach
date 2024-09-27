@@ -1,9 +1,7 @@
-// src/pages/UserDashboard.tsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import UserProfile from "../components/UserProfile";
 import UserActivities from "../components/UserActivities";
-// import Header from "../components/Header";
 import { useParams } from "react-router-dom";
 import { FaSpinner } from "react-icons/fa6";
 

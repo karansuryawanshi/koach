@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { IoNotificationsCircle } from "react-icons/io5";

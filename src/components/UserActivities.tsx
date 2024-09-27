@@ -1,4 +1,3 @@
-// src/components/UserActivities.tsx
 import React from "react";
 
 type Activity = {

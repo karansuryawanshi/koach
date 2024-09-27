@@ -1,7 +1,5 @@
-// src/pages/HomePage.tsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaSpinner } from "react-icons/fa6";
 
